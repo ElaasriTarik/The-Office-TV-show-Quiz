@@ -80,6 +80,9 @@ yesBtn.addEventListener('click', () => {
     dialog.style.display = 'none';
     play();
     li = 3;
+      sc = 0;
+    score.textContent = sc;
+    life.textContent = li;
     })
   }
 })
