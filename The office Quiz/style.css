@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  font-family: Trebuchet MS, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.container {
+  width: 23rem;
+  height: 23rem;
+  border: px solid grey;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+  padding: 10px 0;
+  background-color: #e6f1ffd9;
+}
+.imageAndText {
+  width: 97%;
+  height: 120%;
+  border: 1px solid black;
+  background-color: black;
+  background- image: url("https://i.pinimg.com/564x/8a/44/8b/8a448bb9a76e59b33bb97934277d7a60.jpg");
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageAndText h1 {
+  color: white;
+  position: relative;
+  font-size: 23px;
+  text-align: center;
+  -webkit-text-stroke: 0px white;
+  padding: 2px;
+}
+.answerOpt > p {
+  width: 40%;
+  height: 30%;
+  padding: 10px 0;
+  border: 1px solid grey;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #f2eeee;
+  font-size: 13px;
+}
+.answerOpt > p:hover {
+  background: #c1b8b8;
+  border-color: lightgrey;
+}
+.answerOpt {
+  width: 98%;
+  height: 100%;
+  position: relative;
+  border: 1px solid black;
+  box-shadow: inset 0 0 0px 1px #353535;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap:10%;
+  padding: 30px 0;
+}
+.scoreAndLive {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  position: absolute;
+  padding: 4px 10px;
+  top: 47%;
+}
+dialog {
+  width: 320px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+}
+.buttonsWrrapper {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+.yesBtn, .noBtn {
+  width: 50px;
+  height: 30px;
+  font-weight: 600;
+  background-color: lightblue;
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  color: #353535;
+  cursor: pointer;
+}
+.noBtn {
+  background-color: pink;
+}
+.yesBtn:hover, .noBtn:hover {
+  border: 1px solid #262626;
+}
+.currentPoints {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 10px;
+  font-weight: 700;
+  color: brown;
+}
